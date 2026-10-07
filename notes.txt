@@ -1,0 +1,141 @@
+Class - 1
+===========
+
+    -> Service Now Was Born As an ITSM Tool (2004 - 2012)
+
+        -> Founded By Fred Luddy 
+
+        -> IT Help Desk (Software)
+
+            -> Let's Assume We Want To Setup IT Help Desk (Software) 
+
+                -> Servers 
+
+                -> On Top Servers We Setup Operating System 
+
+                -> Install Server Side Softwares 
+
+                    -> Database Server 
+
+                    -> Application Server
+
+                    -> Web Server 
+                
+                -> Runtimes / Data Management etc 
+
+                -> Coding 
+                
+                -> Building 
+
+                -> Testing 
+
+                -> Deploying 
+
+            -> NOTE: Once All The Above Process Is Done, then we can start Using 
+            IT Help Desk (Software)
+
+            -> NOTE: Service Now is a Cloud Native Replacement For 
+            Legacy IT Help Desk Softwares 
+
+                -> Incident Management
+
+                -> Problem Management
+
+                -> Change Management 
+
+    
+    -> As Of 2026, Service Now Is an AI Control Tower For Business Reinvention,
+    and it all begins with workflows.
+
+    -> NOTE: Biggest Flex Of Service Now 
+
+        -> 85% of the Fortune 500
+
+        -> 98% renewal rate  
+
+        -> 95B workflows 
+
+    
+    -> Workflow: Work + Flow 
+        (How Work Moves From One Step To Another Until it's finished)
+
+    -> Real Life Use Case (Ordering Food Online)
+
+        -> You Place Order 
+
+        -> Restaurant Receives Order 
+
+        -> Food Is Prepared 
+
+        -> Delivery Partner Picks Up  
+
+        -> Food Delivered 
+
+        -> Review 
+
+    
+    -> In Terms Of Business / In Company 
+
+        -> A Workflow is the path a task follows from 
+
+            Request -> Approval -> Action -> Completion 
+
+        
+        -> IT Support Workflow 
+
+            One Of The Employees Says: My Laptop Is Not Working 
+
+            Step - 1 
+
+                -> Employee Raises A Ticket 
+
+                    My Laptop is not starting - submitted via IT Portal/Help desk tool
+
+                    Ticket Created In System (*)
+
+            Step - 2
+                
+                -> Manager Approval
+
+                    Manager Reviews Request and Approves 
+
+                    Auto / Mandatory / Optional (*)
+            
+            Step - 3
+
+                -> IT Team Receives Request  
+
+                    Ticket is assigned to IT Help desk Queue 
+
+                    SLA Timer Starts (*)
+
+            Step - 4
+
+                -> Technician Checks Issue 
+
+                    Technician Visits Employee or Connects Remotely (Hardware / Software)
+
+                    Technician Assigned (*)
+
+            Step - 5
+                
+                -> Laptop Needs Repair / Replacement 
+
+                    Issue Fixed On Spot / A Replacement Device is Provided from IT Inventory 
+
+                    Resolution Captured (*)
+
+            Step - 6
+
+                -> Ticket Closed 
+
+                Employee Confirms Issue is resolved, ticket is closed 
+
+                Workflow Completed (*)
+
+
+
+
+
+
+
