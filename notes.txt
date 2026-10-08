@@ -135,7 +135,150 @@ Class - 1
 
 
 
+Class - 2
+===========
 
+    -> Service Now Is NOT Just One Application, It's a Platform 
+    That Hosts Multiple Applications 
+
+        -> ITSM (Incident Management, Problem Management, Change Management etc)
+
+        -> HRSD (HR Processes, Employee Center, Employee Lifecycle etc)
+
+        -> ITAM (Hardware Models, Hardware Assets, Procurement etc)
+
+        -> ITOM (Service Discovery, Service Mapping, Event Management etc)
+
+    
+    -> NOTE: Moving Ahead We Will Focus On ITOM 
+
+
+    -> ITOM 
+
+        -> IT Operations Management is a suite of applications within service Now 
+        that helps organizations 
+
+            -> Discover, Map and Monitor their Companies / Organizations 
+            IT Infrastructure and IT Services. 
+
+
+        -> IT Infrastructure 
+
+            -> The Foundation Layer (Hardware + Software) 
+            On Which Everything Runs 
+
+            -> Servers 
+
+                -> Physical Servers (On Premise Datacenters)
+
+                -> Virtual Machines (Virtualization Platforms VM Ware)
+
+                -> Cloud Servers / Instances (AWS Cloud / Azure Cloud) 
+
+                -> etc 
+
+            
+            -> Networking 
+
+                -> Routers 
+
+                -> Switches 
+
+                -> Firewalls 
+
+                -> etc 
+
+            
+            -> Operating Systems (System Software)
+
+                -> Windows 
+
+                -> Linux 
+
+                -> MacOS 
+
+            
+            -> Server Softwares
+
+                -> Web Servers (Web Applications) 
+
+                -> Application Servers (API's)
+
+                -> Database Server (MySQL / Postgres)
+
+                -> etc 
+            
+
+        
+        -> IT Services 
+
+            -> What The Business Actually Use and Delivers Services To Customers 
+
+                -> Banking Services 
+
+                -> Ecommerce Services 
+
+                -> etc 
+
+
+        -> NOTE: To Power IT Services, We Need IT Infrastructure 
+
+
+    -> Banking Services Like HDFC 
+
+        -> https://www.hdfc.bank.in/
+
+            -> Net Banking Services
+
+            -> Loan Services 
+
+            -> FASTag Services 
+
+            -> Credit Card Services 
+
+                -> Mobile Number, Credit Card Number, Expiry Date, CVV etc 
+
+                    -> Above is Data (Userdata)
+
+                        -> Data ?? 
+
+                            -> Data Is In Database Server 
+
+                        -> Where is this Database Server ?? 
+
+                            -> Database Can Be Inside Physical Server / Cloud Server / VM etc 
+
+                        -> Where is Server ?? 
+
+                            -> Server Is Inside Datacenter (Physical / Cloud)
+
+        
+        -> NOTE: ITOM bridges the gap between IT Infrastructure and Business Services 
+        by providing Visibility, Automation and Control over entire IT environment.
+
+            -> https://www.pan.utiitsl.com/panonline_ipg/forms/csfPan.html/csfPreForm
+
+            -> https://cdn.mos.cms.futurecdn.net/YrYMceJgTG4XB6dh5yYqxL.jpg
+
+        
+        
+        -> Who Should Learn Service Now ITOM ? 
+
+            -> Service Now ITOM Is Best Suited For Professionals Involved In 
+            IT Infrastructure, Cloud Infrastructure, Cloud Operations, 
+            Monitoring and Enterprise IT Services. 
+
+        
+        
+        -> Typical ITOM Career Path 
+
+            -> Help Desk Engineer 
+                    |
+            -> System Administrator 
+                    |
+            -> Cloud Engineer / DevOps Engineer
+                    |
+            -> Service Now ITOM Specialist (Service Now)
 
 
 
