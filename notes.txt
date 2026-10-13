@@ -299,3 +299,116 @@ Class - 3
     maintaining an accurate and up-to-date CMDB 360 with the information it finds.
 
     
+
+Class - 4
+===========
+
+    -> Modules / Key Concepts Of ITOM 
+
+        -> CMDB (Configuration Management Database)
+
+            -> The Backbone Of ITOM 
+
+            -> All Discoverd Assets and Their Attributes(Properties)
+            are Stored in CMDB As Configuration Items (CI's)
+
+        
+        -> Configuration Items (CI's) 
+
+            -> Any Component That Needs To Be Managed 
+
+                -> Server, Router, Database, Application etc 
+
+            -> All the CI's are Stored / Updated in CMDB
+
+        
+        -> Service Discovery
+
+            -> The Automated Process Of Identifying and Populating CI's 
+            into CMDB, Using MID Server. 
+
+        
+        -> MID Server 
+
+            -> M - Management
+
+            -> I - Instrumentation
+
+            -> D - Discovery 
+
+            -> A Mid Server is an Java Based Application(Agent) Which is Installed 
+            Within Your Customer Network Machine (Cloud / On-Premise)
+
+            -> Mid Server Acts As A bridge between 
+            ServiceNow Instance (PDI) and Target Customer Infrastructure.
+
+
+        -> Service Mapping 
+
+            -> Service Mapping Creates A Map Linking Your Business Service(Ecommerce) 
+            To All The Dependent Infrastructure Components.
+
+    
+
+    -> CMDB (Configuration Management Database)
+
+        -> The ServiceNow Configuration Management Database (CMDB) is a 
+        centralized data repository that stores a logical model of an 
+        organization's IT infrastructure, applications, and services.
+
+        -> CMDB Is Master Inventory Of ServiceNow Operational Implementations. 
+
+        -> Every Server, Every Application, Every Printer, Every Storage Device etc
+        all of these lives as Records In CMDB         
+
+    
+    -> Customer Email Service Down Scenario 
+
+        -> Email Software - CI 
+
+        -> Email Software Requires Tomcat Server - CI 
+
+        -> Tomcat Server Requires Java Environment - CI 
+
+        -> Java Environment Needs Operating System Linux - CI 
+
+        -> Linux Operating System Needs To Run On Hardware - CI 
+
+
+    -> NOTE: So CMDB Answers Important Things 
+
+        -> What Do We Have ? 
+
+        -> Where Is It ?
+
+        -> How Everything Is Connects ? 
+
+    
+    -> NOTE: CMDB is the source of truth for all the ITOM Process 
+
+
+    -> Use Case For Understanding CMDB 
+
+        -> Existing System (Without CMDB)
+
+            -> Imagine We Have A Library With 1000's Of Books 
+
+            -> But We Don't Have Any Catalog System (Randomly Books Kept)
+
+                -> I Need This Specific Book (Looking For Each Book Till You Find)
+
+
+        -> New System (With CMDB)
+
+            -> New Upgraded Library With Complete Catalog 
+
+                -> Search By Title (Server)
+
+                -> Search By Author (Application)
+
+                -> Search By Topic (Hardware)
+
+            -> I Need This Specific Book (Author - Ravi)
+
+                
+
