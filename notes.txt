@@ -282,3 +282,20 @@ Class - 2
 
 
 
+Class - 3
+===========
+
+    -> Main Concepts Of ITOM 
+
+        -> Service Discovery 
+
+        -> Service Mapping 
+
+
+    -> https://www.servicenow.com/docs/r/it-operations-management/discovery/r-discovery.html  
+
+    -> ServiceNow Discovery is an automated process that continuously scans and identifies
+    all the components within the IT infrastructure. It plays a crucial role in 
+    maintaining an accurate and up-to-date CMDB 360 with the information it finds.
+
+    
