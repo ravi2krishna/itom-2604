@@ -412,3 +412,70 @@ Class - 4
 
                 
 
+Class - 5
+===========
+
+    -> Configuration Items (CI's)
+
+        -> A Configuration Item (CI) in servicenow is a digital Record 
+        within the CMDB, representing "Any Manageable IT Component"
+        such as Servers, Applications, Network Devices etc 
+
+        -> CI's Track Infrastructure Details (Manufacturer, Vendor, Locations)
+        to Support ITIL Process 
+
+        -> Any Configuration Item Has Three Things 
+
+            -> Class (What Type Of Asset Is It)
+
+                -> Windows Computer 
+
+                -> Linux Server 
+
+                -> Application 
+
+                -> etc 
+
+            
+            -> Attributes (Properties Of Asset)
+
+                -> Manufacturer 
+
+                -> Operating System 
+
+                -> CPU Type 
+
+                -> Disk 
+
+                -> RAM 
+
+                -> etc 
+
+
+            -> Relationships (Connection With Other Assets)
+
+                -> A Relationship In ServiceNow is a Connection 
+                between Multiple Configuration Items, which defines 
+
+                    -> How They Interact With Others 
+
+                    -> How They Depend On Others 
+
+                    -> Few Examples Include 
+
+                        -> Runs On (An Application Runs On Server)
+
+                        -> Used By (Configuration File Is Used By Application)
+
+                        -> Depends On (Business Service Depends On An Application)
+
+                        -> Connected By (A Server Is Connected By Switch)
+
+                
+                -> NOTE: The Relationships are automatically Discoverd During 
+                Service Discovery, and all the Discoverd Relationships are updated in CMDB 
+
+            -> Manual: https://www.lansweeper.com/wp-content/uploads/2019/06/All-servers-by-type.png    
+
+            -> Using ServiceNow ITOM: https://servicenowguru.com/wp-content/uploads/2024/05/bsmMap.jpg
+                    
