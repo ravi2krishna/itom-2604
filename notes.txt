@@ -479,3 +479,53 @@ Class - 5
 
             -> Using ServiceNow ITOM: https://servicenowguru.com/wp-content/uploads/2024/05/bsmMap.jpg
                     
+
+Class - 6
+===========
+
+    -> Simple Analogy To Connect The Things Moving Ahead 
+
+        -> CMDB (You Can Think Of It As A City Map)
+
+        -> CI's (Buildings Within City - Address - Color - Floors - Size)
+
+        -> Relationships (Roads Connecting Buildings)
+
+        -> Service Discovery (Keeps Map Updated)
+
+        -> Service Mapping (Draws Routes Between Colonies)
+
+        -> Event Manageable (Monitors - If Building Is On Fire, Sends an SOS To Fire Department)
+
+
+    -> Creating CI's 
+
+        -> Class (What Type Of Asset Is It)
+
+        -> Attributes (Properties Of Asset)
+
+        -> Relationships (Connection With Other Assets)
+
+
+    
+    -> NOTE: Now Adding Multiple(100's) CI's and Their Attributes Along With 
+    Relationships, is quite Tedious, Time Taking and also prone to Human Errors.
+    Using Service Discovery, an Automated Process all the above is done 
+    more Efficiently and Effectively.
+
+
+    -> To Perform Automated Service Discovery, Behind The Scenes, Service Now Uses 
+
+        -> MID Server 
+
+        -> Credentials 
+
+        -> Probes 
+
+        -> Sensors 
+
+        -> Patterns 
+
+        -> Discovery Schedules 
+
+        
