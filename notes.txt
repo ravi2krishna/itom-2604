@@ -529,3 +529,184 @@ Class - 6
         -> Discovery Schedules 
 
         
+Class - 7
+===========
+
+    -> Service Discovery is Not Available Out Of The Box 
+
+    -> Install Discovery Plugin To Use Discovery Capabilities On Your PDI 
+
+        -> https://www.servicenow.com/docs/r/it-operations-management/discovery/t_ActivateTheDiscoveryPlugin.html
+
+
+    
+    -> To Perform Automated Service Discovery, Behind The Scenes, Service Now Uses 
+
+        -> MID Server 
+
+        -> Credentials 
+
+        -> Probes 
+
+        -> Sensors 
+
+        -> Patterns 
+
+        -> Discovery Schedules 
+
+
+    
+    
+    -> MID Server 
+
+        -> M: Management 
+
+        -> I: Instrumentation 
+
+        -> D: Discovery 
+
+        
+        -> Management: MID Server Manages Communication Between "ServiceNow PDI" 
+        and "Your IT Infrastructure"
+
+        -> Instrumentation: Read Pulse Of Every Device In Your Infrastructure Network 
+
+            -> Like A Doctor Uses Instruments For Checking Vitals 
+
+            -> MID Server probes servers, os, network devices etc 
+
+            -> Collects Data Like IP, Installed Softwares, IP Address, OS-Version etc 
+
+        -> Discovery: Finding Infrastructure Components Using MID Server 
+
+            -> MID Server Scans IP Ranges and Finds The Devices Automatically 
+
+            -> No Human Intervention Required 
+
+    
+        -> Requirements For MID Server 
+
+            -> MID Server Is an Java Application (Java Agent)
+
+            -> Install Java Version 11 or Above 
+
+            -> Install On Your Cloud Infrastructure or Physical Infrastructure or Virtualized Environment 
+
+        
+        -> NOTE: Real world production environments
+        https://media.licdn.com/dms/image/v2/D4D12AQFI8sqvP4xFFQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1700537758681?e=2147483647&v=beta&t=zE97TFGw5FQJEjUksqx7SohNsqqV57-IYQ_pj7K2M2U
+
+
+        -> MID Server Appears As a Record In "ecc_agent" table showing Status As Up/Down 
+        and Validation State as Yes/No 
+
+        -> MID Server Stores The Configuration Data in config.xml 
+
+            -> ServiceNow PDI Details Like URL & Credentials 
+
+    
+    
+    -> Credentials 
+
+        -> Once MID Server Is Installed, it tries to reach the devices on the network 
+        range defined, and in order to Communicate with them, we need Credentials.
+
+        -> Credentials are Authentication Secrets Stored On Service Now PDI 
+
+        -> Credentials are Stored in "discovery_credentials" table 
+
+        -> MID Servers Encrypts The Credentials 
+
+        -> We Have Different Types Of Credentials 
+
+            -> Windows Credentials Uses Username & Password 
+
+            -> SSH Credentials Uses In Unix & Linux Environments 
+
+                -> SSH Credentials are Made Up Of Public & Private Keys(Key Pair)
+                Typically Goes With Passwordless Authentication.
+
+            -> JDBC  Credentials For Database Connectivity 
+
+            -> Cloud Components Might Use API Keys or Tokens 
+
+        -> NOTE: If Credentials Are Updated Incorrectly, We cannot perform Discovery.
+
+
+
+    -> Probes & Sensors 
+
+        -> Probes & Sensors Are Two Halves Of Same Job 
+
+    
+    -> Probes 
+
+        -> A Probe Is A Question 
+
+            -> It's Script / Command That MID Server Executes Against 
+            Target Devices To Collect Raw Data 
+
+            -> It Runs On MID Server Side, Reaches To Target Device and Brings Back 
+            All The RAW Output Like Commands / XML / Windows Queries / JSON ect 
+
+            -> The Raw Data Output Will Be Stored At ServiceNow Inside 
+            ECC Queue (External Communication Channel)
+
+
+        -> A Sensor Is An Answer 
+
+            -> It's Script / Command That Takes Raw Output From Probes and 
+            Pareses It, To Extract information like fields OS, IP, Hostname,
+            Softwares Installed, Ports Used etc 
+
+            -> After Parsing Maps Them To CI Attributes, thus Updating Records in CMDB 
+
+        -> NOTE: 
+            
+            -> Probes Goes and ASKS
+
+            -> Sensors Comes Back and ANSWERS 
+
+
+    -> Detective Story 
+
+        -> Detective Assistant / Probe 
+
+            -> Goes To Crime Scene, Takes Photos, Lifts Fingerprints, Collects Items etc 
+            (Collects All Raw Evidences)
+
+            -> ITOM: Probes Runs Scripts and Collects Data 
+
+        
+        -> Bag Of Evidence / ECC Queue 
+
+            -> This Bag Of Evidence Contains Full Of Unprocessed Raw Evidence Items 
+
+            -> ITOM: RAW Data Collected (Unprocessed Data)
+
+        
+        -> Detective / Sensor 
+
+            -> Detective Sits At Desk, Opens The Bag Of Evidence,
+            Starts Examining Each Item and Extracts Meaning Of Those Items 
+            and Writes Final Report 
+
+            -> ITOM: Extract Data From ECC Queue and Gives Meaningful Fields 
+            like OS, IP, Hostname, Softwares Installed, Ports Used etc 
+
+
+    -> Complete Flow 
+
+        -> ServiceNow Says - Go Discover This IP 
+
+            -> MID Server Sends Probe (Runs Command/Script On Target Device)
+
+                -> Data Drops Into ECC Queue 
+
+                    -> Sensor Picks Up (Reads, Parses & Extracts)
+
+                        -> CMDB Gets Updated With New CI Record / Updates Existing CI Record
+
+                        
+
+
