@@ -708,5 +708,102 @@ Class - 7
                         -> CMDB Gets Updated With New CI Record / Updates Existing CI Record
 
                         
+Class - 8
+===========
 
+    -> Patterns 
+
+        -> Patterns are servicenow modern Replacement for Probes / Sensor Approach 
+        For Applications and Software Services 
+
+        -> Probes and Sensors are still heavily used for infrastructure
+        (Hardware / Operating System / Network)
+
+        -> NOTE: Patterns are preferred method for Discovering Applications & Services 
+
+        -> A Pattern is an Declarative Definition Unlike Imperative Definition Of 
+        Probes & Sensors, 
+
+        -> Patterns Discover Software Types & Services 
+
+            -> Defines: What To Look For, Which Command To Run, What Files To Read 
+
+                -> Imperative Definition Means "How To Do" 
+
+                -> Declarative Definition Means "What To Do"
+
+        
+        -> NOTE: Patterns are written in Pattern Designer / Visual Designer 
+        rather than using Raw Javascript 
+
+        -> A Pattern Has An Identification Section, which defines what this 
+        pattern should run - for example if port 80 is there this is web server.
+
+
+
+    -> Discovery Schedules 
+
+        -> A Discovery Schedule Is the Configuration Record that defines a discovery run 
+
+        -> Discovery Schedule Answers 
+
+            -> What Should Be Scanned 
+
+                -> IP Address - Single Device 
+
+                -> IP Ranges - Multiple Devices 
+
+                    -> 10.0.0.0/20 
+
+                        -> Scan 4000+ Devices 
+
+                    -> 10.0.0.0/24 
+
+                        -> Scan 250+ Devices 
+
+            
+            -> When To Do Scan 
+
+                -> Schedule Like Run Daily 
+
+                -> Schedule Like Run Weekly 
+
+                -> On Demand (whenever you want) 
+
+            
+            -> Which Mid Server To Use For Scanning 
+
+                -> Datacenter - Mumbai - Ecommerce Infrastructure
+
+                    -> mid_server_mumbai
+
+                -> Datacenter - New york - Ecommerce Infrastructure
+
+                    -> mid_server_new_york 
+
+        -> NOTE: Key Fields Used For Discovery Schedule 
+
+            -> IP Range 
+            -> Schedule 
+            -> Mid Server Name 
+
+        -> NOTE: When Schedule Is Completed, It Creates "Discovery Status" Record 
+
+        -> Discovery Log, within each Status Record Is Your "Debugging Tool" 
+
+            -> It Shows Every Step 
+
+                -> What IP Address Was Tried 
+
+                -> What Probe Was Executed (Hardware)
+
+                -> What Pattern Was Executed (Software)
+
+                -> What Sensor Ran To Parse Data 
+
+                -> What CI Was Created in CMDB
+
+                -> What CI Was Updated in CMDB
+
+                
 
