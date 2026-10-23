@@ -807,3 +807,122 @@ Class - 8
 
                 
 
+Class - 9
+===========
+
+    -> CI Classification 
+
+        -> CI Classification is the Final Step, where the "Classifier Engine" 
+        which determines What CI Class To Create and Whether 
+
+            -> To Create a new CI or 
+
+            -> Update An Existing CI 
+
+        -> When a Sensor or Pattern finished Parsing Data From Devices, they hand over 
+        Raw Attributes To CI Classifier Engine
+
+        -> The CI Classifiers Engine Job Is To Look At The Attributes and Answer 
+        following Question 
+
+            -> What Type Of CI is this ? 
+
+            -> Does This Already Exist In CMDB ? 
+
+        -> NOTE: Classifier Engine == Identification Rules 
+
+    
+    -> Identification / Reconciliation 
+
+        -> Rules For Matching Configuration Item Before insert / update 
+
+    
+    
+    -> IRE (Identification & Reconciliation Engine)
+
+        -> IRE is underlying servicenow Engine which uses identifier Rules 
+
+            -> Each Class Has Defined Set Of Identifier Fields which makes a CI Unique 
+
+            -> Criterion attributes are like Unique Fingerprints For CI 
+
+                -> For A Web Server Like Apache, the combination of 
+                sys_class_name + config_file + version is the unique identifier 
+
+                -> For A Docker Container, the container_id is the unique identifier 
+
+                    -> A Docker container ID is a globally unique, automatically generated
+                    alphanumeric string that serves as the primary identifier 
+                    for an individual Docker container. It is a 64-character hexadecimal string.
+
+                -> For A Tomcat Server, the sys_class_name + install_directory + running process
+                is the unique identifier 
+
+            
+            -> NOTE: If IRE Finds a match, it updates the existing CI, 
+            this is called Reconciliation. 
+
+            -> NOTE: If IRE Doesn't Finds a match, it Creates New CI, 
+            this is called Reconciliation. 
+
+
+        -> Simple Analogy To Understand IDE 
+
+            -> Think IRE As Hospital Reception Desk 
+
+                -> Patient Walks In (Discovery Finds A Device)
+
+                    -> Receptionist Asks: "Have You Been Here Before ?"
+
+                        Patient Says "YES" -> Pull Existing File, Update It (Reconciliation)
+
+                        Patient Says "NO" -> Create A New Patient File (New CI Created)
+
+            -> From ITOM Context 
+
+                -> Question: What Are You ? 
+
+                    -> Apache Web Server / Docker Container / Tomcat Server ??
+
+                -> Question: HAve I Seen You Before ? 
+
+                    -> Does this CI Already Exist In CMDB 
+
+                        -> Yes : Update Existing CI 
+
+                        -> No : Create New CI 
+
+    
+    -> Complete Flow 
+
+        -> Discovery Scans Server 
+
+            -> Probe Sends Question 
+
+            -> Pattern / Sensor Collects Raw Attributes 
+            (config_file, container_id, hostname etc)
+
+            -> IRE Receives Payload 
+
+            -> Question - 1: What Type Of CI ? 
+
+                -> Looks At CI Identifiers List 
+
+                -> Matches "Apache Rule" 
+
+                -> Class = cmdb_ci_apache_web_server
+
+
+            -> Question - 2: Does It Exist ? 
+
+                ->  Ues Criterion Attributes 
+                sys_class_name + config_file + version 
+
+                -> Search cmdb_ci_apache_web_server table 
+
+                    -> Found?: Update Existing CI 
+
+                    -> Not Found?: Create New CI 
+
+        -> Finally CMDB Is Updated 
+                
