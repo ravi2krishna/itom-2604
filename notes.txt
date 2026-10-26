@@ -926,3 +926,79 @@ Class - 9
 
         -> Finally CMDB Is Updated 
                 
+
+Class - 10
+===========
+
+    -> Complete LAB Implementations 
+
+        -> Infrastructure 
+
+            -> Cloud Infrastructure 
+
+            -> Access To Infrastructure Is Must Moving Ahead 
+
+            -> We Will Use AWS For Infrastructure 
+
+            -> Setup AWS Cloud Account 
+
+                -> Need New Email ID 
+
+                -> Need Mobile Number 
+
+                -> Need Card / UPI 
+
+                -> Need AADHAR CARD / PAN CARD
+
+        
+        -> Login To AWS 
+
+            -> https://aws.amazon.com/console/ 
+
+            -> Select Sign In Using Root User Email 
+
+                -> Select Root User 
+
+                -> Input Email address and Password - Click Sign In 
+
+
+    -> AWS EC2 - Elastic Cloud Compute 
+
+             -> Amazon Elastic Compute Cloud (EC2) is a foundational AWS service providing secure, 
+            resizable virtual servers — known as "EC2 instances" — in the cloud. 
+            It enables users to rent computing power, memory, and storage on-demand.
+
+        -> NOTE: Eventually In Datacenters, We Have Servers and Servers Host Applications.
+
+    -> Inside AWS Server Management Is Done Using EC2 Service 
+
+    -> EC2 - Elastic Compute Cloud 
+
+        -> EC2 allows users to rent virtual computers (Servers/Machines) on which 
+        you can run your own computer applications.
+
+    
+        -> Computer has hardware                        -> Server has Instance Type [cpu + ram]
+            i3 / i5 / 4 GB RAM etc                          t2.micro, t2.medium, t2.large etc 
+
+        -> Computer has hard disk                       -> Instance has EBS (Elastic Block) Storage
+            250 GB / 500 GB / 1 TB                          250 GB / 500 GB / 1 TB                      
+        
+        -> Computer has network                         -> Instance has VPC 
+
+        -> Computer has Firewall                        -> Instance Has security group 
+
+        -> Computer has operating system                -> Instance has AMI - Amazon Machine Image 
+
+        -> Computer has Authentication                  -> Instance has Authentication
+            username & password                             key pairs (public & private key)
+
+        -> Computer has applications                    -> Instance has applications
+            chrome / notepad etc                            myntra / flipkart / netflix etc 
+
+
+
+        
+
+
+
