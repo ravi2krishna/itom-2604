@@ -998,7 +998,53 @@ Class - 10
 
 
 
+Class - 11
+===========        
+
+    -> Will Setup Windows Machine To Run Our Mid Server 
+
+    -> System Software Installations 
+
+        -> Installed Java Version 25 (LTS)
+
+            -> Verify Java Installation Using Command Prompt 
+
+                -> java -version 
+
+                    -> 'java' is not recognized as an internal or external command, operable program or batch file.
+
+            
+            -> https://www.oracle.com/java/technologies/downloads/
+
+                -> Download 25 LTS and Install exe file 
+
+                -> Close and Re Open Command Prompt and verify command 
+
+                    -> java -version 
+
+    
+    
+    -> On Service Now PDI 
+
+        -> Create an Dedicated Account(Mid User) For Mid Server, Don't Use Admin User Moving Ahead 
+
+        -> NOTE: Login With Mid User And Change The Password 
+
+        -> In Order To Work With Di Server, We Need Roles i.e Permissions 
+
+        -> NOTE: Assign Mid User mid_server Role 
+
+    
+    -> Installing MID Server (java agent) 
+
+        -> Verify Your PDI Version and Install 
+
         
+
+
+
+
+
 
 
 
