@@ -1041,7 +1041,20 @@ Class - 11
 
         
 
+Class - 12
+===========   
 
+    -> Out Of The Box there are no ITOM Features Available in ServiceNow PDI 
+
+    -> To Perform Service Discovery, We Need To Install Plugin Discovery Plugin In Your PDI 
+
+    -> Discovery LAB Session 
+
+        -> Add Credentials & Test Credentials 
+
+        -> Test Probes & Sensors With Mid Server Created Against Our Mid Server Itself 
+
+        
 
 
 
