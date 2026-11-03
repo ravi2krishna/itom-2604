@@ -1055,8 +1055,19 @@ Class - 12
         -> Test Probes & Sensors With Mid Server Created Against Our Mid Server Itself 
 
         
+Class - 13
+===========
+
+    -> Performing Discovery - Windows 
+
+        -> A /32 (pronounced "slash 32") at the end of an IPv4 address means 
+        the network mask has 32 bits set to 1, which represents a single, 
+        specific host or IP address.
 
 
+    -> Performing Discovery - Linux 
+
+         
 
 
 
