@@ -1068,7 +1068,85 @@ Class - 13
     -> Performing Discovery - Linux 
 
          
+Class - 14
+===========
 
+    -> Discovery With Multiple Servers 
+
+        -> When We Setup Multiple Servers / Instances, they will be 
+        always part of Network / Datacenter 
+
+        -> We Need To Understand Networking Concepts Like Subnetting 
+
+            -> CIDR Notation: It combines an IP address with a 
+            slash and a number (e.g., 192.168.1.0/24).
+
+            -> Network Prefix: The slash number (prefix length) indicates 
+            how many bits are dedicated to the network portion.
+
+            -> https://mattrickard.com/static/image/how-to-calculate-a-cidr/1.webp
+
+
+
+                                                A.B.C.D - 10.0.0.0 - IP 
+                                                An IP is 32 Bit No (4 Octets)
+                                                Each Octet Being 8 Bits 
+
+                                                A.B.C.D/NW (NW - NetMask)
+
+
+                                                10.0.0.0/20 
+
+                                                Total = 32
+                                                NM = 20 
+                                                Result = Total - NM 
+                                                No Of Devices = 2 ^ Result 
+                                                
+
+
+                                                No Of Devices = 32 - 20 = 12 -> 2 ^ 12 = 4096 
+
+
+
+
+                                                DatacenterA - 10.0.0.0/20 - 4k - 10.0.0.0 - 10.0.15.255 
+
+                                                    10.0.0.0
+                                                    10.0.0.1
+                                                    10.0.0.2
+                                                    .
+                                                    .
+                                                    10.0.0.255
+                                                    10.0.1.0
+                                                    10.0.1.1
+                                                    .
+                                                    .
+                                                    10.0.1.255
+                                                    10.0.2.0
+                                                    10.0.2.1
+                                                    .
+                                                    10.0.2.255
+                                                    .
+                                                    .
+                                                    .
+                                                    .
+                                                    10.0.15.255 - 4096 
+
+                                                
+                                                DatacenterB - 10.0.16.0/22 - 2k - 10.0.0.0 - 10.0.15.255 
+
+                                                    10.0.16.0
+                                                    10.0.16.1
+                                                    .
+                                                    .
+                                                    10.0.16.255
+                                                    10.0.17.1
+                                                    .
+                                                    10.0.17.255
+                                                    .
+                                                    .
+                                                    .
+                                                    10.0.19.255 - 1024
 
 
 
