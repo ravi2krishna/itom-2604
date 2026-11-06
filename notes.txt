@@ -1149,4 +1149,14 @@ Class - 14
                                                     10.0.19.255 - 1024
 
 
+Class - 15
+===========
+
+    -> Discover Multiple Servers - Using Schedule 
+
+    -> HR Subnet Range Is - 172.31.64.0/24
+
+    -> HR Subnet Start Address - 172.31.64.0
+
+    -> HR Subnet Ending Address - 
 
