@@ -1160,3 +1160,114 @@ Class - 15
 
     -> HR Subnet Ending Address - 
 
+
+Class - 16
+===========
+
+    -> Service Mapping 
+
+        -> https://www.servicenow.com/in/products/it-operations-management/what-is-service-mapping.html
+
+        -> Service mapping charts a company’s interconnected IT environment. 
+        This allows organizations to build a service-aware view of 
+        how their underlying IT applications and related components 
+        connect to business services.
+
+        -> Service Mapping Is Used To Discover and Track IT Applications and 
+        Components in an organization, outlining how each connects to Business Services.
+
+        -> https://media.licdn.com/dms/image/v2/D5612AQFTabVd6lwPNw/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1675397958842?e=2147483647&v=beta&t=yN3OPRI6JCxvBOLTsW72W3ZQpjN1uDWIztrEgpI-FrU
+
+        -> NOTE: Service Mapping Is A Way Of More Clearly Understanding 
+        Application Services.
+
+
+    -> Application Service 
+
+        -> An application service is defined as a group of connected applications 
+        and hosts configured to operate together, to provide a specific service 
+        to an organization or end-user. 
+
+        -> One example of an application service is financial reporting. 
+        When an organization needs to generate a financial report, they employ 
+        an application service that includes computer hardware, web server, 
+        application server, databases, middleware, and network infrastructure components.
+        Each of these works together to provide the service of creating the 
+        desired financial report.
+
+        -> Traditionally, IT departments have relied on horizontal discovery 
+        to map IT infrastructures. This delivery method creates inventories 
+        that act as though every application and device is standalone, 
+        without making note of the connections between devices and application services. 
+        
+        -> Service mapping forgoes this outdated approach, relying instead on 
+        top-down mapping that focuses on the connections between 
+        devices and applications so that any issues or changes can be 
+        immediately identified along with their impact on the rest of 
+        the application service.
+
+        -> https://www.servicenow.com/docs/r/zurich/it-operations-management/service-mapping/service-mapping-get-started.html
+
+
+    -> Service Instance 
+
+        -> A service instance is a set of interconnected applications and hosts 
+        that are configured to offer a service to the organization. 
+        
+        -> Service instances can be internal, like an organization email system or 
+        customer-facing, like an organization website. 
+        For example, creating financial reports through a web-based application 
+        requires a computer, web server, application server, databases, 
+        middleware, and network infrastructure.
+        These applications and hosts are all configured to offer the 
+        service of financial reporting.
+
+    -> Typically, IT departments create and maintain an inventory that 
+    treats devices and applications as standalone, independent objects. 
+    Connections between the devices and applications are not included. 
+    This is usually referred to as horizontal discovery i.e Service Discovery. 
+    This method does not address the biggest challenge for IT departments, 
+    which is understanding the connection and dependencies between each object.
+
+    -> Service Mapping maps dependencies, based on a connection between 
+    devices and applications. This method is referred to as top-down mapping. 
+    The top-down mapping helps you immediately see the impact of a 
+    problematic object on the rest of the service instance operation.
+
+    -> https://www.servicenow.com/docs/api/khub/maps/guxhDnVk8OUAJKLm7WZsYA/resources/9uEv1ID3zPqCzqimr6wCPw-guxhDnVk8OUAJKLm7WZsYA/content?v=6b28bac7ca859e47e27943afab88c07ec841d79f6d520cf1a59f405342099765&Ft-Calling-App=ft/turnkey-portal
+
+
+    -> NOTE: Service Discover Sees "What Exists"
+
+    -> NOTE: Service Mapping Sees "How Things Talk To Each Other"
+
+
+    -> Core Concept Of Service Mapping is Automatically Discovering 
+    How IT Components Are Connected and Building A Service Map, 
+    A Visual Dependency Map Of A Business Service(Like Ecommerce Portal / HR Portal etc)
+
+    -> Service Mapping Answers: Which Servers, What Application and Application Services,
+    Powers Your Businesses. 
+
+
+    -> Top Down(Service Discovery) Vs Bottom Up(Service Mapping)
+
+    Top Down                                        Bottom Up 
+
+    -> Starts From Business Service URL             -> A Known CI in CMDB(Linux Server)
+    (www.ecommerce.com) 
+
+    -> Follows Web Traffic(HTTP Traffic)            -> Scans Network Connections
+        -> Discovers Processes                      from the CI Upward 
+            -> Traces Ports 
+
+    -> URL -> Apache Service -> Server              -> IP Address 
+
+    -> For Understanding Connections                -> Knowing What It Is 
+
+    
+
+
+
+
+
