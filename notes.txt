@@ -1266,7 +1266,46 @@ Class - 16
     -> For Understanding Connections                -> Knowing What It Is 
 
     
+Class - 17
+===========
 
+    -> Service Mapping Lab 
+
+        -> On Top Of Linux Server Will Setup Web Server 
+
+                -> Installed Apache Web Server 
+
+                -> MID Server Runs Apache Pattern 
+
+            
+            -> WEB SERVER - A web server is computer software [ APACHE HTTP Server ] 
+            and underlying hardware  [ AWS EC2 ] that accepts requests via HTTP/S 
+            to distribute web content.
+
+            -> The hardware runs 24/7 in data centers, while software processes 
+            client browser requests, returning HTML, images, or videos.
+
+            -> https://media.geeksforgeeks.org/wp-content/uploads/20190927155217/webserver.png
+
+            -> Apache Web Server Runs On Port 80 
+
+                -> sudo ss -ntpl 
+
+                -> NOTE: Browse IP Of Web Server - This site can’t be reached
+
+                -> NOTE: Confirms Web Server is not running, as no port 80 is detected
+
+                -> Steps To Install Apache Web Server 
+
+                    -> sudo apt update -y 
+
+                    -> sudo apt install apache2 -y 
+
+                    -> sudo ss -ntpl 
+
+                -> NOTE: Confirms Web Server is running, as port 80 is detected
+
+                -> NOTE: Browse IP Of Web Server - This site can be reached
 
 
 
