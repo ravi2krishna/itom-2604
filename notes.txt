@@ -1308,5 +1308,28 @@ Class - 17
                 -> NOTE: Browse IP Of Web Server - This site can be reached
 
 
+Class - 18
+===========
 
+    -> On Our Linux Server, Will Deploy Ecommerce Business Service 
+
+        -> NOTE: You should replace this file (located at /var/www/html/index.html) 
+        before continuing to operate your HTTP server.
+
+                -> Application Code - https://github.com/ravi2krishna/ecomm.git
+
+                -> sudo git clone <url> <destination 
+
+                -> sudo git clone https://github.com/ravi2krishna/ecomm.git /var/www/html/
+
+                    -> fatal: destination path '/var/www/html' already exists and is not an empty directory.
+
+                -> Clean Up (Emptying Directory)
+
+                    -> sudo rm -r /var/www/html/*
+
+                -> sudo git clone https://github.com/ravi2krishna/ecomm.git /var/www/html/
+
+
+                -> NOTE: Browse IP Of Web Server - Ecommerce site can be reached
 
