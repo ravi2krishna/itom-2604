@@ -1844,3 +1844,11 @@ Class - 21
         -> This Confirms integration is successful 
 
         -> Prometheus ---> Alert Manager ---> ServiceNow
+
+
+Class - 22
+===========
+
+    -> Event Management Final Steps 
+
+    
